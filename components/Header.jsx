@@ -5,7 +5,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Link from "next/link";
 import pic from "../public/Facebook.svg";
-import logo from "../public/logo.jpg";
+import logo from "../public/logo.svg.png";
 import { HiOutlineMail, HiPhone, HiMenu } from "react-icons/hi";
 
 function Header() {
@@ -30,7 +30,7 @@ function Header() {
           <div className="flex m-1 items-stretch">
             <HiPhone size="19" className="mt-1" />
             <p className="m-1 text-xs sm:text-xs md:text-xs lg:text-sm">
-              samutcahika@gmail.com
+              +260 963495390
             </p>
           </div>
           <div className="flex m-1  items-stretch">
@@ -71,9 +71,10 @@ function Header() {
             <div className="inline-flex ">
               <Link href="/form">
                 <button className="sm:text-sm border border-blue-200 bg-blue-300 hover:bg-blue-400 m-1 rounded-lg p-1 font-serif shadow-sm">
-                  Apply Now
+                  staff
                 </button>
               </Link>
+
               <a
                 href="http://35.228.211.242/login/"
                 target="_blank"
@@ -83,6 +84,11 @@ function Header() {
                   Student login
                 </button>
               </a>
+              <Link href="/about">
+                <button className="sm:text-sm border border-blue-200 bg-blue-300 hover:bg-blue-400 m-1 rounded-lg p-1 font-serif shadow-sm">
+                  about
+                </button>
+              </Link>
             </div>
           </div>
           <div>
@@ -112,7 +118,7 @@ function Header() {
             width="45"
             height="45"
           />
-          <p className="text-tiny2">"Computer Literacy is Our Priority"</p>
+          <p className="text-tiny2">Computer Literacy is Our Priority</p>
           <Link href="/">
             <button
               onClick={toggleDrawer}
@@ -126,7 +132,7 @@ function Header() {
               onClick={toggleDrawer}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded w-full"
             >
-              Apply Now !
+              Apply Now
             </button>
           </Link>
           <a
