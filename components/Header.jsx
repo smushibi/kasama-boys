@@ -26,7 +26,7 @@ function Header() {
       {/* main */}
       <div className="h-12 fixed  top-0 z-10 bg-gradient-to-r from-slate-200 cursor-pointer shadow-2xl w-full">
         {/* Contact Details */}
-        <div className="flex  items-baseline justify-end">
+        <div className="flex h-7 items-baseline justify-end">
           <div className="flex m-1 items-stretch">
             <HiPhone size="19" className="mt-1" />
             <p className="m-1 text-xs sm:text-xs md:text-xs lg:text-sm">
@@ -44,24 +44,24 @@ function Header() {
               src={pic}
               alt="facebook image"
               width="70"
-              height="70"
-              className="mr-3"
+              height="60"
+              className="mr-1"
             />
           </div>
         </div>
 
         {/* School Heading */}
-        <div className="grid grid-cols-6 ">
+        <div className="flex justify-evenly ">
           <div>
-            <Image
-              src={logo}
-              alt="facebook image"
-              width="60"
-              height="60"
-              className="mx-2  p-1 rounded-xl"
-            />
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="coat of arms Zambia"
+                className="sm:h-4 sm:w-4 md:h-16 md:w-16 h-16 w-20 object-contain"
+              />
+            </Link>
           </div>
-          <div className="col-span-3 ">
+          <div className="col-span-3">
             <p className="ml-4 font-sans font-semibold text-center text-base sm:text-base md:text-2xl lg:text-3xl ">
               Kasama Boys Secondary School
             </p>
@@ -71,7 +71,7 @@ function Header() {
             <div className="inline-flex ">
               <Link href="/form">
                 <button className="sm:text-sm border border-blue-200 bg-blue-300 hover:bg-blue-400 m-1 rounded-lg p-1 font-serif shadow-sm">
-                  staff
+                  Admin login
                 </button>
               </Link>
 
@@ -84,20 +84,15 @@ function Header() {
                   Student login
                 </button>
               </a>
-              <Link href="/about">
-                <button className="sm:text-sm border border-blue-200 bg-blue-300 hover:bg-blue-400 m-1 rounded-lg p-1 font-serif shadow-sm">
-                  about
-                </button>
-              </Link>
             </div>
           </div>
           <div>
             <button
-              className="ml-16 mt-1 bg-slate-400 rounded-sm px-2 py-1 sm:invisible"
+              className="ml-10 mt-1 bg-blue-400 rounded-md px-2 py-1 sm:invisible"
               onClick={toggleDrawer}
               aria-label="menu button"
             >
-              <HiMenu size="25" />
+              <HiMenu size="25" color="green" />
             </button>
           </div>
         </div>
@@ -110,15 +105,15 @@ function Header() {
         direction="right"
         size="100vw"
       >
-        <div className="grid gap-2 bg-gradient-to-r from-indigo-500 justify-items-center m-3 p-4">
+        <div className="grid gap-2 bg-gradient-to-r from-blue-400 justify-items-center m-3 p-4">
           <Image
             className="mt-1 rounded-2xl hover:cursor-pointer"
-            src={pic}
-            alt="school logo alphatech institute"
+            src={logo}
+            alt="coat of arms zambia"
             width="45"
             height="45"
           />
-          <p className="text-tiny2">Computer Literacy is Our Priority</p>
+          <p className="text-tiny2">Umuntu Mutwe !</p>
           <Link href="/">
             <button
               onClick={toggleDrawer}
@@ -127,12 +122,12 @@ function Header() {
               Home Page
             </button>
           </Link>
-          <Link href="/form">
+          <Link href="/">
             <button
               onClick={toggleDrawer}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded w-full"
             >
-              Apply Now
+              Admin
             </button>
           </Link>
           <a
@@ -144,7 +139,7 @@ function Header() {
               onClick={toggleDrawer}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded w-full"
             >
-              Student Login
+              Student Portal
             </button>
           </a>
         </div>
