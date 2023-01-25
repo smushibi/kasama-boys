@@ -51,10 +51,7 @@ function Gallery() {
           <Image src={img6} alt="pic" className="rounded-lg" />
           <p>
             The School administrators are dedicated and hardworking individuals
-            who play a crucial role in the success of schools. They are
-            committed to providing students with the best possible educational
-            experience, and work tirelessly to ensure that schools run smoothly
-            and efficiently
+            who play a crucial role in the success of schools. 
           </p>
         </div>
 
@@ -62,9 +59,7 @@ function Gallery() {
           <Image src={img11} alt="pic" className="rounded-lg" />
           <p>
             "Knowledge is the key to unlocking your potential and achieving
-            excellence in all areas of your life. Embrace learning and seek out
-            new opportunities to expand your understanding of the world. With
-            knowledge, you can accomplish anything you set your mind to.
+            excellence in all areas of your life.
           </p>
         </div>
         <div>

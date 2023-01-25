@@ -54,7 +54,7 @@ function Header() {
           </div>
           <div className="col-span-3">
             <p className="ml-4 font-sans font-semibold text-center text-base sm:text-base md:text-2xl lg:text-3xl ">
-              Kasama Boys Secondary School
+              "Kasama Boys Secondary School"
             </p>
           </div>
 
