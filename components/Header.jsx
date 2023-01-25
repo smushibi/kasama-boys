@@ -24,7 +24,7 @@ function Header() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* main */}
-      <div className="h-12 fixed  top-0 z-10 bg-gradient-to-r from-slate-200 cursor-pointer shadow-2xl w-full">
+      <div className="h-10 fixed hover:shadow-inner top-0 z-10 bg-gradient-to-r from-slate-200 cursor-pointer shadow-xl w-full">
         {/* Contact Details */}
         <div className="flex h-7 items-baseline justify-end">
           <div className="flex m-1 items-stretch">
@@ -33,20 +33,11 @@ function Header() {
               +260 963495390
             </p>
           </div>
-          <div className="flex m-1  items-stretch">
+          <div className="flex m-1  items-stretch ">
             <HiOutlineMail size="19" className="mt-1" />
             <p className=" m-1 text-xs  sm:text-xs md:text-xs lg:text-sm">
               samutcahika@gmail.com
             </p>
-          </div>
-          <div className="justify-items-center">
-            <Image
-              src={pic}
-              alt="facebook image"
-              width="70"
-              height="60"
-              className="mr-1"
-            />
           </div>
         </div>
 
@@ -88,11 +79,11 @@ function Header() {
           </div>
           <div>
             <button
-              className="ml-10 mt-1 bg-blue-400 rounded-md px-2 py-1 sm:invisible"
+              className="ml-10 mt-1  bg-black rounded-md px-2 py-1 sm:invisible"
               onClick={toggleDrawer}
               aria-label="menu button"
             >
-              <HiMenu size="25" color="green" />
+              <HiMenu size="25" color="white" />
             </button>
           </div>
         </div>
