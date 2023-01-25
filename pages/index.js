@@ -1,5 +1,10 @@
 import Gallery from '../components/Gallery'
 import { useState } from 'react'
+import Image from 'next/image'
+import py1 from '../public/pymath.png'
+import py2 from '../public/Pythagoras-1.gif'
+import py3 from '../public/Pythagoras-2.gif'
+import sce from '../public/experiment-lab.gif'
 
 export default function Home() {
   const data = [
@@ -12,7 +17,7 @@ export default function Home() {
     <>
       <div>
         <p className="mt-20 w-full font-bold bg-green-300 text-center text-sm sm:text-xs md:text-xl lg:text-lg">
-          knowledge and Excellence
+          "Knowledge and Excellence"
         </p>
       </div>
       <div className="grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  ">
@@ -57,7 +62,7 @@ export default function Home() {
           <button className="bg-green-400 shadow-2xl w-full rounded-sm  hover:bg-green-300">
             School Administration
           </button>{' '}
-          <p className="text-justify sm:text-sm md:text-base lg:text-lg">
+          <p className="text-justify sm:text-sm md:text-base lg:text-lg p-1">
             The School administrators are dedicated and hardworking individuals
             who play a crucial role in the success of schools. They are
             committed to providing students with the best possible educational
@@ -78,7 +83,7 @@ export default function Home() {
           <button className="bg-green-400 shadow-2xl w-full rounded-sm  hover:bg-green-300">
             Teachers
           </button>{' '}
-          <p className="text-justify sm:text-sm md:text-base lg:text-lg">
+          <p className="text-justify sm:text-sm md:text-base lg:text-lg p-1">
             Teachers are the backbone of the educational system and play a
             crucial role in shaping the minds and futures of their students.
             They are dedicated professionals who are passionate about their
@@ -96,9 +101,9 @@ export default function Home() {
         </div>
         <div className="bg-slate-200 shadow-sm p-1">
           <button className="bg-green-400 shadow-2xl w-full rounded-sm  hover:bg-green-300">
-            School Administration
+            Students
           </button>{' '}
-          <p className="text-justify sm:text-sm md:text-base lg:text-lg">
+          <p className="text-justify sm:text-sm md:text-base lg:text-lg p-1">
             Pupils are the reason why schools exist and they are the future of
             our society. They are curious, energetic and full of potential. They
             bring diverse perspectives, ideas, and talents to the classroom,
@@ -112,84 +117,78 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className=" m-1 p-1 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 ">
-        <div className="bg-blue-300 p-1">
-          {' '}
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
+      <div className=" m-4 p-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
+        <div className="bg-slate-200 shadow-sm p-1">
+          <button className="bg-green-400 shadow-2xl w-full rounded-sm  hover:bg-green-300">
+            Mathematics
+          </button>{' '}
+          <p className="text-justify sm:text-sm md:text-base lg:text-lg p-1">
+            The beauty of math lies in its ability to explain and make sense of
+            the world around us. Math is the language of science and technology,
+            and it is used to understand everything from the smallest subatomic
+            particles to the largest structures in the universe.
           </p>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <Image
+              src={py1}
+              alt="pythagoras Theorem pic"
+              height="350"
+              width="350"
+            />
+            <Image
+              src={py2}
+              alt="pythagoras Theorem pic"
+              height="350"
+              width="350"
+            />
+            <Image
+              src={py3}
+              alt="pythagoras Theorem pic"
+              height="350"
+              width="350"
+            />
+          </div>
         </div>
-        <div className="bg-yellow-200 p-1">
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
+        <div className="bg-slate-200 shadow-sm p-1">
+          <button className="bg-green-400 shadow-2xl w-full rounded-sm  hover:bg-green-300">
+            Science
+          </button>{' '}
+          <div className="flex flex-wrap items-center">
+            <p className="text-justify sm:text-sm md:text-base lg:text-lg p-1 smooth-transition">
+              <Image src={sce} alt="science pic" height="300" width="300" className='smooth-transition'/>
+              Science education in schools is essential in preparing students
+              for the future by giving them the skills and knowledge they need
+              to understand and engage with the world around them. It helps
+              students to develop critical thinking, problem-solving and
+              analytical skills, which are valuable for any career. Science
+              education also helps students to understand the natural world and
+              how it works, and to appreciate the beauty and complexity of the
+              universe. It also helps students to understand the impact of
+              science and technology on their daily lives, and to make informed
+              decisions about the issues that affect their future. Furthermore,
+              science education can also be a lot of fun, with hands-on
+              experiments and investigations that allow students to explore and
+              discover the world around them. Overall, science education in
+              schools is vital for the development of a well-informed and
+              scientifically literate society.
+            </p>
+          </div>
         </div>
-        <div className="bg-slate-400 p-1">
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
-        </div>
-      </div>
-      <div className=" m-4 p-2 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 ">
-        <div className="bg-blue-300 p-1">
-          {' '}
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
-        </div>
-        <div className="bg-yellow-200 p-1">
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
-        </div>
-        <div className="bg-slate-400 p-1">
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
-        </div>
-      </div>
-      <div className=" m-1 p-1 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 align-middle justify-items-center justify-center w-full">
-        <div className="bg-blue-300 p-1">
-          {' '}
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
-        </div>
-        <div className="bg-yellow-200 p-1">
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
-          </p>
-        </div>
-        <div className="bg-slate-400 p-1">
-          <p>
-            08/09/2019 Congratulations to our boys. Umuntu Mutwe!!
-            Congratulations to Kasama Boys Secondary School for scooping the
-            2019 Battle of the Brains in Water Supply and Sanitation Inter
-            Schools Quiz Grand Prize of K15,000.
+        <div className="bg-slate-200 shadow-sm p-1">
+          <button className="bg-green-400 shadow-2xl w-full rounded-sm  hover:bg-green-300">
+            School Administration
+          </button>{' '}
+          <p className="text-justify sm:text-sm md:text-base lg:text-lg p-1">
+            Pupils are the reason why schools exist and they are the future of
+            our society. They are curious, energetic and full of potential. They
+            bring diverse perspectives, ideas, and talents to the classroom,
+            which enriches the learning experience for everyone. They have a
+            natural thirst for knowledge and are eager to explore new concepts
+            and ideas. They are open-minded, resilient and determined to
+            succeed. They are not afraid to take risks, to make mistakes, and to
+            learn from them. They are kind, compassionate and respectful of
+            others. They are the ones who will shape the future and bring change
+            to our world. They are the hope for a better tomorrow.
           </p>
         </div>
       </div>
