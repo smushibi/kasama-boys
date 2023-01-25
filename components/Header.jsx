@@ -24,7 +24,7 @@ function Header() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* main */}
-      <div className="h-10 fixed hover:shadow-inner top-0 z-10 bg-gradient-to-r from-slate-200 cursor-pointer shadow-xl w-full">
+      <div className="h-10 fixed  top-0 z-10 bg-gradient-to-r from-slate-200 cursor-pointer  w-full">
         {/* Contact Details */}
         <div className="flex h-7 items-baseline justify-end">
           <div className="flex m-1 items-stretch">
