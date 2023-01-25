@@ -21,7 +21,13 @@ function Gallery() {
       <Carousel autoPlay infiniteLoop interval={3000} showThumbs={false}>
         <div>
           <Image src={img} alt="pic" className="rounded-lg" />
-          <p></p>
+          <p>
+            Be inspired by those who have achieved great things, but remember
+            that true success comes from within. Believe in yourself and your
+            abilities, and always strive to be the best you can be. With hard
+            work, determination, and a positive attitude, you can achieve
+            excellence in all aspects of your life."
+          </p>
         </div>
         <div>
           <Image src={img1} alt="pic" className="rounded-lg" />
